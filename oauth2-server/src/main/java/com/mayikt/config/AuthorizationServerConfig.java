@@ -82,9 +82,9 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	@Bean
 	UserDetailsService userDetailsService() {
 		InMemoryUserDetailsManager userDetailsService = new InMemoryUserDetailsManager();
-		userDetailsService.createUser(User.withUsername("user_1").password(passwordEncoder().encode("123456"))
+		userDetailsService.createUser(User.withUsername("redmaple").password(passwordEncoder().encode("123456"))
 				.authorities("ROLE_USER").build());
-		userDetailsService.createUser(User.withUsername("user_2").password(passwordEncoder().encode("1234567"))
+		userDetailsService.createUser(User.withUsername("redmaple").password(passwordEncoder().encode("1234567"))
 				.authorities("ROLE_USER").build());
 		return userDetailsService;
 	}
